@@ -1,0 +1,24 @@
+{
+  "name": "transfer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "dependencies": {
+    "sax": "^1.2.4",
+    "xml2js": "^0.4.23",
+    "xmlbuilder": "^11.0.1"
+  },
+  "devDependencies": {},
+  "license": "ISC",
+  "bin": {
+    "myapp": "./main.js"
+  },
+  "pkg": {
+    "assets": [
+      "node_modules/**/*"
+    ],
+    "targets": [
+      "node16-win-x64"
+    ]
+  }
+}

@@ -1,0 +1,292 @@
+{
+
+    "GeneralLimits": [
+
+        {
+            "name": "Programmable Blocks",
+            "dangerous": true,
+
+            "player": [4, 6],
+            "faction": 15,
+
+            "blocks": [
+                "MyProgrammableBlock"
+            ],
+            "exceptions": []
+        }
+
+    ],
+
+    "ClassLimits": [
+        
+        {
+            "name": "Production",
+            "dangerous": false,
+
+            "A": [15, 20, 30, 40],
+            "B": [15, 18, 25, 30],
+            "C": null,
+
+            "blocks": [
+                "Assembler",
+                "Refinery"
+            ],
+            "exceptions": []
+        },
+
+        {
+            "name": "BARs",
+            "dangerous": false,
+
+            "A": [2, 4, 6, 8],
+            "B": [2, 3, 5, 6],
+            "C": [1, 2, 3, 4],
+
+            "blocks": [
+                "ShipWelder/SELtdLargeNanobotBuildAndRepairSystem",
+                "ShipWelder/SELtdSmallNanobotBuildAndRepairSystem"
+            ],
+            "exceptions": []
+        },
+
+        {
+            "name": "H2/O2 Tanks",
+            "dangerous": false,
+
+            "A": [10, 20, 40, 80],
+            "B": [8, 16, 32, 64],
+            "C": [6, 10, 20, 40],
+
+            "blocks": [
+                "OxygenTank"
+            ],
+            "exceptions": []
+        },
+
+        {
+            "name": "Welders",
+            "dangerous": false,
+
+            "A": [4, 6, 12, 20],
+            "B": [3, 5, 10, 15],
+            "C": [2, 4, 8, 10],
+
+            "blocks": [
+                "ShipWelder"
+            ],
+            "exceptions": [
+                "ShipWelder/SELtdLargeNanobotBuildAndRepairSystem",
+                "ShipWelder/SELtdSmallNanobotBuildAndRepairSystem"
+            ]
+        },
+
+        {
+            "name": "Grinders",
+            "dangerous": false,
+
+            "A": [4, 6, 12, 20],
+            "B": [3, 5, 10, 15],
+            "C": [2, 4, 8, 10],
+
+            "blocks": [
+                "ShipGrinder"
+            ],
+            "exceptions": []
+        },
+
+        {
+            "name": "Drills",
+            "dangerous": false,
+
+            "A": [16, 16, 16, 30],
+            "B": [16, 16, 16, 30],
+            "C": [16, 16, 16, 16],
+
+            "blocks": [
+                "Drill"
+            ],
+            "exceptions": [
+                "Drill/SELtdLargeNanobotDrillSystem",
+                "Drill/SELtdSmallNanobotDrillSystem"
+            ]
+        },
+
+        {
+            "name": "Reactors",
+            "dangerous": false,
+
+            "A": [6, 12, 24, 42],
+            "B": [6, 10, 18, 26],
+            "C": [10, 16, 20, 30],
+
+            "blocks": [
+                "Reactor"
+            ],
+            "exceptions": []
+        },
+
+        {
+            "name": "Batteries",
+            "dangerous": false,
+
+            "A": [40, 60, 80, 150],
+            "B": [40, 50, 70, 100],
+            "C": [10, 20, 30, 40],
+
+            "blocks": [
+                "BatteryBlock"
+            ],
+            "exceptions": []
+        },
+
+        {
+            "name": "Solar",
+            "dangerous": false,
+
+            "A": [20, 40, 60, 100],
+            "B": [20, 30, 60, 80],
+            "C": [4, 8, 16, 32],
+
+            "blocks": [
+                "SolarPanel"
+            ],
+            "exceptions": []
+        },
+
+        {
+            "name": "Hydrogen Engines",
+            "dangerous": false,
+
+            "A": [5, 15, 30, 50],
+            "B": [5, 10, 20, 40],
+            "C": [2, 4, 8, 16],
+
+            "blocks": [
+                "HydrogenEngine"
+            ],
+            "exceptions": []
+        },
+
+        {
+            "name": "Cameras",
+            "dangerous": false,
+
+            "A": [10, 15, 25, 40],
+            "B": [8, 15, 20, 30],
+            "C": [6, 12, 16, 24],
+
+            "blocks": [
+                "CameraBlock"
+            ],
+            "exceptions": []
+        },
+
+        {
+            "name": "Programmable Blocks",
+            "dangerous": true,
+
+            "A": [2, 4, 8, 12],
+            "B": [2, 4, 6, 8],
+            "C": [1, 2, 4, 6],
+
+            "blocks": [
+                "MyProgrammableBlock"
+            ],
+            "exceptions": []
+        },
+
+        {
+            "name": "Pistons/Rotors/Hinges",
+            "dangerous": true,
+
+            "A": [2, 4, 8, 12],
+            "B": [2, 4, 6, 8],
+            "C": [2, 4, 6, 8],
+
+            "blocks": [
+                "MotorAdvancedRotor",
+                "MotorRotor",
+                "PistonBase"
+            ],
+            "exceptions": []
+        },
+
+        {
+            "name": "Weapons",
+            "dangerous": false,
+
+            "A": [40, 90, 150, 250],
+            "B": [30, 80, 100, 200],
+            "C": [15, 25, 40, 60],
+
+            "blocks": [
+                "SmallGatlingGun",
+                "LargeGatlingTurret",
+                "InteriorTurret",
+                "LargeMissileTurret",
+                "SmallMissileLauncher",
+                "LargeMissileTurret/ARYX_ChordAutocannon",
+                "LargeMissileTurret/ARYX_ChordAutocannon_SG",
+                "ConveyorSorter/ARYXTorpLauncher",
+                "ConveyorSorter/ARYXLongbowLauncher",
+                "ConveyorSorter/ARYXLongbowLauncher_SG",
+                "ConveyorSorter/ARYXHeavyMissileSalvoLauncher",
+                "ConveyorSorter/ARYXPlasmaPulser",
+                "ConveyorSorter/ARYX_FocusBeam_CompactSG",
+                "LargeMissileTurret/ARYX_FocusBeam_CompactTurret",
+                "ConveyorSorter/ARYXGaussCannon",
+                "ConveyorSorter/ARYXRailgun",
+                "ConveyorSorter/ARYXLightCoilgun",
+                "ConveyorSorter/ARYXKingswordSupercannon",
+                "LargeMissileTurret/ARYXRailgunTurret",
+                "LargeMissileTurret/ARYXPicketRailgun",
+                "LargeMissileTurret/ARYXSentinel",
+                "LargeMissileTurret/ARYXReaperPulseCannon",
+                "ConveyorSorter/ARYXMace",
+                "ConveyorSorter/AWE_WL_SuperLaser_Large_CB",
+                "LargeMissileTurret/ARYX_FW_NovaBlaster",
+                "ConveyorSorter/AWE_MarkV_SuperLaser_Large_CB",
+                "ConveyorSorter/ARYXLargeRadar",
+                "ConveyorSorter/ARYXSmallRadar",
+                "LargeMissileTurret/ARYXMagnetarCannon",
+                "LargeMissileTurret/ARYXCycloneCannon",
+                "LargeMissileTurret/ARYXCycloneCannon_SG",
+                "LargeMissileTurret/ARYXHurricaneCannon",
+                "LargeMissileTurret/ARYXTyphoonCannon",
+                "SmallMissileLauncher/ARYXTempestCannon",
+                "SmallMissileLauncher/ARYXTempestCannon_SG",
+                "LargeMissileTurret/ARYXBurstTurret",
+                "LargeMissileTurret/ARYXBurstTurret_SG",
+                "ConveyorSorter/ARYXBurstTurretSlanted",
+                "ConveyorSorter/ARYXHydraTurret",
+                "ConveyorSorter/ARYXTacticalModule",
+                "LargeMissileTurret/ARYXHeavyFlakTurret",
+                "ConveyorSorter/ARYXMissileBattery",
+                "LargeMissileTurret/ARYXPlasmaBeamCannon",
+                "ConveyorSorter/ARYXOculusLaserBase",
+                "LargeMissileTurret/ARYXJuryCannon",
+                "LargeGatlingTurret/ARYXAtlasPDC",
+                "LargeGatlingTurret/ARYXCodexPDC",
+                "ConveyorSorter/ARYXSlantedCodexPDC",
+                "ConveyorSorter/ARYXSlantedInvCodexPDC",
+                "LargeGatlingTurret/ARYXCodexPDC_SG",
+                "LargeMissileTurret/ARYXAuroraLaser",
+                "LargeMissileTurret/ARYXWarriorGatling",
+                "LargeMissileTurret/ARYXPulseTurret",
+                "LargeMissileTurret/ARYXCompactPulseTurret",
+                "LargeMissileTurret/ARYXNucleonShotgun",
+                "SmallMissileLauncher/ARYXFlechetteLauncher",
+                "ConveyorSorter/ARYXVariableLauncher",
+                "SmallGatlingGun/ARYX_FixedAtlasGatling",
+                "SmallGatlingGun/ARYX_SmallChaingun",
+                "SmallMissileLauncher/ARYX_Fixed_Chord_auto",
+                "ConveyorSorter/ARYXSmallFlechetteLauncher",
+                "LargeMissileTurret/ARYXFlakTurret",
+                "ConveyorSorter/ARYX_Small_Sidekick_Hangar"
+            ],
+            "exceptions": []
+        }
+
+    ]
+
+}
