@@ -63,6 +63,7 @@ Setup.ClassLimits.forEach(Obj => {
     if (Obj.A) Obj.A.forEach((x, index) => Group.push(new Limit.ShipClass(Obj, `A${index + 1}`)))
     if (Obj.B) Obj.B.forEach((x, index) => Group.push(new Limit.ShipClass(Obj, `B${index + 1}`)))
     if (Obj.C) Obj.C.forEach((x, index) => Group.push(new Limit.ShipClass(Obj, `C${index + 1}`)))
+    if (Obj.D) Obj.D.forEach((x, index) => Group.push(new Limit.ShipClass(Obj, `D${index + 1}`)))
 
     Config.BlockLimiterConfig.LimitItems[0].LimitItem = Config.BlockLimiterConfig.LimitItems[0].LimitItem.concat(Group)
 

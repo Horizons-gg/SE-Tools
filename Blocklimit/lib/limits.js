@@ -1,7 +1,8 @@
 const Classes = {
-    A: ['StationsOnly', 1000, 3000, 8000, 8000],
-    B: ['LargeGridsOnly', 750, 2500, 7500, 7500],
-    C: ['SmallGridsOnly', 250, 500, 1000, 1000]
+    A: ['SupportedStationsOnly', 1000, 3000, 8000, 8000],
+    B: ['StationsOnly', 750, 2500, 7500, 7500],
+    C: ['LargeGridsOnly', 750, 2500, 7500, 7500],
+    D: ['SmallGridsOnly', 250, 500, 1000, 1000]
 }
 
 
