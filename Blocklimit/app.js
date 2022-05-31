@@ -71,16 +71,16 @@ Setup.ClassLimits.forEach(Obj => {
 
 
 //? General Limits
-// Setup.ClassLimits.forEach(Obj => {
+Setup.GeneralLimits.forEach(Obj => {
 
-//     let Group = []
+    let Group = []
 
-//     if (Obj.player) Obj.player.forEach((x, index) => Group.push(new Limit.Player(x, index)))
-//     if (Obj.faction) Group.push(new Limit.Limit(Obj, `B${index + 1}`))
+    if (Obj.player) Group.push(new Limit.Player(Obj))
+    if (Obj.faction) Group.push(new Limit.Faction(Obj))
 
-//     Config.BlockLimiterConfig.LimitItems[0].LimitItem = Config.BlockLimiterConfig.LimitItems[0].LimitItem.concat(Group)
+    Config.BlockLimiterConfig.LimitItems[0].LimitItem = Config.BlockLimiterConfig.LimitItems[0].LimitItem.concat(Group)
 
-// })
+})
 
 
 

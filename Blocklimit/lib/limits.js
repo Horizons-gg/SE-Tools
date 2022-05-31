@@ -10,7 +10,6 @@ const Classes = {
 class ShipClass {
 
     constructor(Obj, Class) {
-
         let ClassType = Class.charAt(1) === '4' ? '>' : '<'
 
         this.Name = `${Obj.name} | ${Class} Class [${ClassType}${Classes[Class.charAt(0)][Class.charAt(1)]} Blocks]`
@@ -19,7 +18,7 @@ class ShipClass {
         this.LimitFaction = 'false'
         this.LimitGrids = 'true'
         this.LimitPlayers = 'false'
-        this.Punishment = Obj.dangerous ? 'ShutOffBlock' : 'DeleteBlock'
+        this.Punishment = Obj.dangerous ? 'DeleteBlock' : 'ShutOffBlock'
         this.IgnoreNpcs = 'true'
         this.RestrictProjection = Obj.dangerous
         this.LimitFilterType = 'GridBlockCount'
@@ -36,35 +35,48 @@ class ShipClass {
 
 
 class Player {
-
-    constructor(Obj, Class) {
-
-        let ClassType = Class.charAt(1) === '4' ? '>' : '<'
-
-        this.Name = `${Obj.name} | ${Class} Class [${ClassType}${Classes[Class.charAt(0)][Class.charAt(1)]} Blocks]`
+    constructor(Obj) {
+        this.Name = `${Obj.name} [Player Limit]`
         this.BlockList = { string: Obj.blocks.map(block => block) }
         this.Exceptions = { string: Obj.exceptions.map(exception => exception) }
         this.LimitFaction = 'false'
-        this.LimitGrids = 'true'
-        this.LimitPlayers = 'false'
-        this.Punishment = Obj.dangerous ? 'ShutOffBlock' : 'DeleteBlock'
+        this.LimitGrids = 'false'
+        this.LimitPlayers = 'true'
+        this.Punishment = Obj.dangerous ? 'DeleteBlock' : 'ShutOffBlock'
         this.IgnoreNpcs = 'true'
         this.RestrictProjection = Obj.dangerous
         this.LimitFilterType = 'GridBlockCount'
-
-        this.GridTypeBlock = Classes[Class.charAt(0)][0]
-        this.FilterValue = Classes[Class.charAt(0)][Class.charAt(1)]
-        this.Limit = Obj[Class.charAt(0)][Class.charAt(1) - 1]
-
-        if (Class.charAt(1) === '4') this.LimitFilterOperator = 'GreaterThan'
-        else this.LimitFilterOperator = 'LessThan'
+        this.GridTypeBlock = 'GridTypeBlock'
+        this.FilterValue = '0'
+        this.Limit = Obj.player
+        this.LimitFilterOperator = 'LessThan'
     }
+}
 
+
+class Faction {
+    constructor(Obj) {
+        this.Name = `${Obj.name} [Faction Limit]`
+        this.BlockList = { string: Obj.blocks.map(block => block) }
+        this.Exceptions = { string: Obj.exceptions.map(exception => exception) }
+        this.LimitFaction = 'false'
+        this.LimitGrids = 'false'
+        this.LimitPlayers = 'true'
+        this.Punishment = Obj.dangerous ? 'DeleteBlock' : 'ShutOffBlock'
+        this.IgnoreNpcs = 'true'
+        this.RestrictProjection = Obj.dangerous
+        this.LimitFilterType = 'GridBlockCount'
+        this.GridTypeBlock = 'GridTypeBlock'
+        this.FilterValue = '0'
+        this.Limit = Obj.faction
+        this.LimitFilterOperator = 'LessThan'
+    }
 }
 
 
 
 module.exports = {
     ShipClass,
-    Player
+    Player,
+    Faction
 }

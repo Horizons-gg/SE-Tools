@@ -3,14 +3,129 @@
     "GeneralLimits": [
 
         {
+            "name": "Blacklisted",
+            "dangerous": true,
+
+            "player": 0,
+            "faction": 0,
+
+            "blocks": [
+                "ConveyorSorter/ARYXTacticalModule",
+                "ConveyorSorter/ARYXKingswordSupercannon"
+            ],
+            "exceptions": []
+        },
+        
+        {
             "name": "Programmable Blocks",
             "dangerous": true,
 
-            "player": [4, 6],
-            "faction": 15,
+            "player": 4,
+            "faction": 16,
 
             "blocks": [
                 "MyProgrammableBlock"
+            ],
+            "exceptions": []
+        },
+
+        {
+            "name": "BARs",
+            "dangerous": true,
+
+            "player": 4,
+            "faction": 16,
+
+            "blocks": [
+                "ShipWelder/SELtdLargeNanobotBuildAndRepairSystem",
+                "ShipWelder/SELtdSmallNanobotBuildAndRepairSystem"
+            ],
+            "exceptions": []
+        },
+        
+        {
+            "name": "Production",
+            "dangerous": false,
+
+            "player": 60,
+            "faction": 60,
+
+            "blocks": [
+                "Assembler",
+                "Refinery"
+            ],
+            "exceptions": []
+        },
+
+        {
+            "name": "H2/O2 Tanks",
+            "dangerous": false,
+
+            "player": 400,
+            "faction": 400,
+
+            "blocks": [
+                "OxygenTank"
+            ],
+            "exceptions": []
+        },
+
+        {
+            "name": "Welders",
+            "dangerous": false,
+
+            "player": 40,
+            "faction": 40,
+
+            "blocks": [
+                "ShipWelder"
+            ],
+            "exceptions": [
+                "ShipWelder/SELtdLargeNanobotBuildAndRepairSystem",
+                "ShipWelder/SELtdSmallNanobotBuildAndRepairSystem"
+            ]
+        },
+
+        {
+            "name": "Grinders",
+            "dangerous": false,
+
+            "player": 40,
+            "faction": 40,
+
+            "blocks": [
+                "ShipGrinder"
+            ],
+            "exceptions": []
+        },
+
+        {
+            "name": "Drills",
+            "dangerous": false,
+
+            "player": 60,
+            "faction": 60,
+
+            "blocks": [
+                "Drill"
+            ],
+            "exceptions": [
+                "Drill/SELtdLargeNanobotDrillSystem",
+                "Drill/SELtdSmallNanobotDrillSystem"
+            ]
+        },
+
+        {
+            "name": "Pistons/Rotors/Hinges",
+            "dangerous": true,
+
+            "player": 50,
+            "faction": 50,
+
+            "blocks": [
+                "MotorAdvancedRotor",
+                "MotorRotor",
+                "PistonBase"
             ],
             "exceptions": []
         }
@@ -211,10 +326,10 @@
             "name": "Pistons/Rotors/Hinges",
             "dangerous": true,
 
-            "A": [2, 4, 8, 12],
-            "B": [2, 4, 6, 8],
-            "C": [2, 4, 6, 8],
-            "D": [2, 4, 6, 8],
+            "A": [4, 8, 16, 24],
+            "B": [4, 8, 12, 16],
+            "C": [4, 8, 12, 16],
+            "D": [4, 8, 12, 16],
 
             "blocks": [
                 "MotorAdvancedRotor",
@@ -297,6 +412,171 @@
                 "ConveyorSorter/ARYXSmallFlechetteLauncher",
                 "LargeMissileTurret/ARYXFlakTurret",
                 "ConveyorSorter/ARYX_Small_Sidekick_Hangar"
+            ],
+            "exceptions": []
+        },
+
+        {
+            "name": "Atlas Superlaser",
+            "dangerous": false,
+
+            "A": [0, 1, 2, 3],
+            "B": [0, 1, 2, 2],
+            "C": [0, 1, 2, 2],
+            "D": null,
+
+            "blocks": [
+                "ConveyorSorter/AWE_MarkV_SuperLaser_Large_CB"
+            ],
+            "exceptions": []
+        },
+
+        {
+            "name": "Mark-I Atlas Superlaser",
+            "dangerous": false,
+
+            "A": [1, 2, 4, 6],
+            "B": [1, 2, 3, 4],
+            "C": [1, 2, 3, 4],
+            "D": null,
+
+            "blocks": [
+                "ConveyorSorter/AWE_MarkV_SuperLaser_Large_CB"
+            ],
+            "exceptions": []
+        },
+
+        {
+            "name": "Reaper Pulse Cannon",
+            "dangerous": false,
+
+            "A": [2, 4, 6, 8],
+            "B": [2, 3, 4, 6],
+            "C": [2, 3, 4, 5],
+            "D": null,
+
+            "blocks": [
+                "LargeMissileTurret/ARYXReaperPulseCannon"
+            ],
+            "exceptions": []
+        },
+
+        {
+            "name": "Hunter-405 Coilgun",
+            "dangerous": false,
+
+            "A": [2, 4, 6, 8],
+            "B": [2, 3, 4, 6],
+            "C": [2, 3, 4, 5],
+            "D": null,
+
+            "blocks": [
+                "ConveyorSorter/ARYXLightCoilgun"
+            ],
+            "exceptions": []
+        },
+
+        {
+            "name": "Ares Gauss Cannon",
+            "dangerous": false,
+
+            "A": [2, 4, 6, 8],
+            "B": [2, 3, 4, 6],
+            "C": [2, 3, 4, 5],
+            "D": null,
+
+            "blocks": [
+                "ConveyorSorter/ARYXGaussCannon"
+            ],
+            "exceptions": []
+        },
+
+        {
+            "name": "Small Hangar Bay",
+            "dangerous": false,
+
+            "A": [2, 4, 6, 8],
+            "B": [2, 3, 4, 6],
+            "C": [2, 3, 4, 5],
+            "D": null,
+
+            "blocks": [
+                "ConveyorSorter/ARYX_Small_Sidekick_Hangar"
+            ],
+            "exceptions": []
+        },
+
+        {
+            "name": "Trident Plasma Beam Cannon",
+            "dangerous": false,
+
+            "A": [4, 6, 9, 12],
+            "B": [4, 6, 8, 10],
+            "C": [4, 6, 8, 10],
+            "D": null,
+
+            "blocks": [
+                "LargeMissileTurret/ARYXPlasmaBeamCannon"
+            ],
+            "exceptions": []
+        },
+
+        {
+            "name": "Typhoon Heavy Cannon",
+            "dangerous": false,
+
+            "A": [4, 6, 9, 12],
+            "B": [4, 6, 8, 10],
+            "C": [4, 6, 8, 10],
+            "D": null,
+
+            "blocks": [
+                "LargeMissileTurret/ARYXTyphoonCannon"
+            ],
+            "exceptions": []
+        },
+
+        {
+            "name": "Magnetar Laser Cannon",
+            "dangerous": false,
+
+            "A": [4, 6, 9, 12],
+            "B": [4, 6, 8, 10],
+            "C": [4, 6, 8, 10],
+            "D": null,
+
+            "blocks": [
+                "LargeMissileTurret/ARYXMagnetarCannon"
+            ],
+            "exceptions": []
+        },
+
+        {
+            "name": "Artemis-250 Railgun",
+            "dangerous": false,
+
+            "A": [6, 10, 14, 16],
+            "B": [6, 8, 12, 14],
+            "C": [6, 8, 12, 14],
+            "D": null,
+
+            "blocks": [
+                "LargeMissileTurret/ARYXRailgunTurret"
+            ],
+            "exceptions": []
+        },
+
+        {
+            "name": "Artemis-250 Railgun",
+            "dangerous": false,
+
+            "A": [6, 10, 14, 16],
+            "B": [6, 8, 12, 14],
+            "C": [6, 8, 12, 14],
+            "D": null,
+
+            "blocks": [
+                "LargeMissileTurret/ARYXRailgunTurret"
             ],
             "exceptions": []
         }
