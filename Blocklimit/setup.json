@@ -18,6 +18,7 @@
         
         {
             "name": "Programmable Blocks",
+            "tag": "Creativity",
             "dangerous": true,
 
             "player": 4,
@@ -31,6 +32,7 @@
 
         {
             "name": "BARs",
+            "tag": "Blocks",
             "dangerous": true,
 
             "player": 4,
@@ -45,6 +47,7 @@
         
         {
             "name": "Production",
+            "tag": "Productivity",
             "dangerous": false,
 
             "player": 60,
@@ -59,6 +62,7 @@
 
         {
             "name": "H2/O2 Tanks",
+            "tag": "Productivity",
             "dangerous": false,
 
             "player": 400,
@@ -72,6 +76,7 @@
 
         {
             "name": "Welders",
+            "tag": "Operations",
             "dangerous": false,
 
             "player": 40,
@@ -88,6 +93,7 @@
 
         {
             "name": "Grinders",
+            "tag": "Operations",
             "dangerous": false,
 
             "player": 40,
@@ -101,6 +107,7 @@
 
         {
             "name": "Drills",
+            "tag": "Operations",
             "dangerous": false,
 
             "player": 60,
@@ -117,6 +124,7 @@
 
         {
             "name": "Pistons/Rotors/Hinges",
+            "tag": "Creativity",
             "dangerous": true,
 
             "player": 50,
@@ -136,6 +144,7 @@
         
         {
             "name": "Production",
+            "tag": "Productivity",
             "dangerous": false,
 
             "A": [15, 20, 30, 40],
@@ -152,6 +161,7 @@
 
         {
             "name": "BARs",
+            "tag": "Productivity",
             "dangerous": false,
 
             "A": [2, 4, 6, 8],
@@ -168,6 +178,7 @@
 
         {
             "name": "H2/O2 Tanks",
+            "tag": "Productivity",
             "dangerous": false,
 
             "A": [10, 20, 40, 80],
@@ -183,6 +194,7 @@
 
         {
             "name": "Welders",
+            "tag": "Operations",
             "dangerous": false,
 
             "A": [4, 6, 12, 20],
@@ -201,6 +213,7 @@
 
         {
             "name": "Grinders",
+            "tag": "Operations",
             "dangerous": false,
 
             "A": [4, 6, 12, 20],
@@ -216,6 +229,7 @@
 
         {
             "name": "Drills",
+            "tag": "Operations",
             "dangerous": false,
 
             "A": [16, 16, 16, 30],
@@ -234,6 +248,7 @@
 
         {
             "name": "Reactors",
+            "tag": "Power Production",
             "dangerous": false,
 
             "A": [6, 12, 24, 42],
@@ -249,6 +264,7 @@
 
         {
             "name": "Batteries",
+            "tag": "Power Production",
             "dangerous": false,
 
             "A": [40, 60, 80, 150],
@@ -264,6 +280,7 @@
 
         {
             "name": "Solar",
+            "tag": "Power Production",
             "dangerous": false,
 
             "A": [20, 40, 60, 100],
@@ -279,6 +296,7 @@
 
         {
             "name": "Hydrogen Engines",
+            "tag": "Power Production",
             "dangerous": false,
 
             "A": [5, 15, 30, 50],
@@ -294,6 +312,7 @@
 
         {
             "name": "Cameras",
+            "tag": "Creativity",
             "dangerous": false,
 
             "A": [10, 15, 25, 40],
@@ -309,6 +328,7 @@
 
         {
             "name": "Programmable Blocks",
+            "tag": "Creativity",
             "dangerous": true,
 
             "A": [2, 4, 8, 12],
@@ -324,6 +344,7 @@
 
         {
             "name": "Pistons/Rotors/Hinges",
+            "tag": "Creativity",
             "dangerous": true,
 
             "A": [4, 8, 16, 24],
@@ -341,6 +362,7 @@
 
         {
             "name": "Weapons",
+            "tag": "Combat",
             "dangerous": false,
 
             "A": [40, 90, 150, 250],
@@ -418,6 +440,7 @@
 
         {
             "name": "Atlas Superlaser",
+            "tag": "Combat",
             "dangerous": false,
 
             "A": [0, 1, 2, 3],
@@ -433,6 +456,7 @@
 
         {
             "name": "Mark-I Atlas Superlaser",
+            "tag": "Combat",
             "dangerous": false,
 
             "A": [1, 2, 4, 6],
@@ -448,6 +472,7 @@
 
         {
             "name": "Reaper Pulse Cannon",
+            "tag": "Combat",
             "dangerous": false,
 
             "A": [2, 4, 6, 8],
@@ -463,6 +488,7 @@
 
         {
             "name": "Hunter-405 Coilgun",
+            "tag": "Combat",
             "dangerous": false,
 
             "A": [2, 4, 6, 8],
@@ -478,6 +504,7 @@
 
         {
             "name": "Ares Gauss Cannon",
+            "tag": "Combat",
             "dangerous": false,
 
             "A": [2, 4, 6, 8],
@@ -493,6 +520,7 @@
 
         {
             "name": "Small Hangar Bay",
+            "tag": "Combat",
             "dangerous": false,
 
             "A": [2, 4, 6, 8],
@@ -508,6 +536,7 @@
 
         {
             "name": "Trident Plasma Beam Cannon",
+            "tag": "Combat",
             "dangerous": false,
 
             "A": [4, 6, 9, 12],
@@ -523,6 +552,7 @@
 
         {
             "name": "Typhoon Heavy Cannon",
+            "tag": "Combat",
             "dangerous": false,
 
             "A": [4, 6, 9, 12],
@@ -538,6 +568,7 @@
 
         {
             "name": "Magnetar Laser Cannon",
+            "tag": "Combat",
             "dangerous": false,
 
             "A": [4, 6, 9, 12],
@@ -553,21 +584,7 @@
 
         {
             "name": "Artemis-250 Railgun",
-            "dangerous": false,
-
-            "A": [6, 10, 14, 16],
-            "B": [6, 8, 12, 14],
-            "C": [6, 8, 12, 14],
-            "D": null,
-
-            "blocks": [
-                "LargeMissileTurret/ARYXRailgunTurret"
-            ],
-            "exceptions": []
-        },
-
-        {
-            "name": "Artemis-250 Railgun",
+            "tag": "Combat",
             "dangerous": false,
 
             "A": [6, 10, 14, 16],

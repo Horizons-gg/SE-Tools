@@ -44,8 +44,8 @@ Config.BlockLimiterConfig = {
     BlockOwnershipTransfer: 'true',
     MergerBlocking: 'true',
     Annoy: 'true',
-    PunishInterval: '900',
-    AnnoyMessage: "You're in violation of set limits.  Use [!blocklimit mylimit] to view which limits you've exceeded.",
+    PunishInterval: '300',
+    AnnoyMessage: "You're in violation of set limits.  Use [!blocklimit mylimit] to view which limits you've exceeded.  You can also use [?limits] to view all limits and ship classes.",
     AnnoyInterval: '300',
     AnnoyDuration: '15000'
 }
