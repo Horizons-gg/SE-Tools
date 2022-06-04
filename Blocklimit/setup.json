@@ -123,6 +123,21 @@
         },
 
         {
+            "name": "Mega Drills",
+            "tag": "Operations",
+            "dangerous": false,
+
+            "player": 8,
+            "faction": 8,
+
+            "blocks": [
+                "Drill/Large_Drill_Tier",
+                "Drill/ModCubeBlockLargeMegaDrill"
+            ],
+            "exceptions": []
+        },
+
+        {
             "name": "Pistons/Rotors/Hinges",
             "tag": "Creativity",
             "dangerous": true,
