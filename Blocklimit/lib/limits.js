@@ -46,7 +46,7 @@ class Player {
         this.IgnoreNpcs = 'true'
         this.RestrictProjection = Obj.dangerous
         this.LimitFilterType = 'GridBlockCount'
-        this.GridTypeBlock = 'GridTypeBlock'
+        this.GridTypeBlock = 'AllGrids'
         this.FilterValue = '0'
         this.Limit = Obj.player
         this.LimitFilterOperator = 'LessThan'
@@ -66,7 +66,7 @@ class Faction {
         this.IgnoreNpcs = 'true'
         this.RestrictProjection = Obj.dangerous
         this.LimitFilterType = 'GridBlockCount'
-        this.GridTypeBlock = 'GridTypeBlock'
+        this.GridTypeBlock = 'AllGrids'
         this.FilterValue = '0'
         this.Limit = Obj.faction
         this.LimitFilterOperator = 'LessThan'

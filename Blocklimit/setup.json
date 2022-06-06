@@ -21,7 +21,7 @@
             "tag": "Creativity",
             "dangerous": true,
 
-            "player": 4,
+            "player": 16,
             "faction": 16,
 
             "blocks": [
@@ -127,8 +127,8 @@
             "tag": "Operations",
             "dangerous": false,
 
-            "player": 8,
-            "faction": 8,
+            "player": 4,
+            "faction": 6,
 
             "blocks": [
                 "Drill/Large_Drill_Tier",
@@ -259,6 +259,23 @@
                 "Drill/SELtdLargeNanobotDrillSystem",
                 "Drill/SELtdSmallNanobotDrillSystem"
             ]
+        },
+
+        {
+            "name": "Mega Drills",
+            "tag": "Operations",
+            "dangerous": false,
+
+            "A": [1, 2, 3, 4],
+            "B": [1, 2, 2, 2],
+            "C": [1, 2, 2, 2],
+            "D": null,
+
+            "blocks": [
+                "Drill/Large_Drill_Tier",
+                "Drill/ModCubeBlockLargeMegaDrill"
+            ],
+            "exceptions": []
         },
 
         {
