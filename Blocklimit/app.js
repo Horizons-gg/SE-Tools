@@ -75,8 +75,8 @@ Setup.GeneralLimits.forEach(Obj => {
 
     let Group = []
 
-    if (Obj.player) Group.push(new Limit.Player(Obj))
-    if (Obj.faction) Group.push(new Limit.Faction(Obj))
+    if (Obj.player > -1) Group.push(new Limit.Player(Obj))
+    if (Obj.faction > -1) Group.push(new Limit.Faction(Obj))
 
     Config.BlockLimiterConfig.LimitItems[0].LimitItem = Config.BlockLimiterConfig.LimitItems[0].LimitItem.concat(Group)
 

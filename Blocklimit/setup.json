@@ -61,7 +61,7 @@
         },
 
         {
-            "name": "H2/O2 Generation",
+            "name": "O2/H2 Generation",
             "tag": "Productivity",
             "dangerous": false,
 
@@ -76,7 +76,7 @@
         },
 
         {
-            "name": "H2/O2 Tanks",
+            "name": "O2/H2 Tanks",
             "tag": "Productivity",
             "dangerous": false,
 
@@ -207,7 +207,7 @@
         },
 
         {
-            "name": "H2/O2 Generation",
+            "name": "O2/H2 Generation",
             "tag": "Productivity",
             "dangerous": false,
 
@@ -224,7 +224,7 @@
         },
 
         {
-            "name": "H2/O2 Tanks",
+            "name": "O2/H2 Tanks",
             "tag": "Productivity",
             "dangerous": false,
 
