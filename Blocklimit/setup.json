@@ -46,7 +46,7 @@
         },
         
         {
-            "name": "Production",
+            "name": "Assemblers/Refineries",
             "tag": "Productivity",
             "dangerous": false,
 
@@ -56,6 +56,21 @@
             "blocks": [
                 "Assembler",
                 "Refinery"
+            ],
+            "exceptions": []
+        },
+
+        {
+            "name": "H2/O2 Generation",
+            "tag": "Productivity",
+            "dangerous": false,
+
+            "player": 60,
+            "faction": 60,
+
+            "blocks": [
+                "OxygenGenerator",
+                "OxygenFarm"
             ],
             "exceptions": []
         },
@@ -125,10 +140,10 @@
         {
             "name": "Mega Drills",
             "tag": "Operations",
-            "dangerous": false,
+            "dangerous": true,
 
-            "player": 4,
-            "faction": 6,
+            "player": 0,
+            "faction": 0,
 
             "blocks": [
                 "Drill/Large_Drill_Tier",
@@ -156,9 +171,26 @@
     ],
 
     "ClassLimits": [
-        
+
         {
-            "name": "Production",
+            "name": "BARs",
+            "tag": "Productivity",
+            "dangerous": false,
+
+            "A": [2, 4, 6, 8],
+            "B": [2, 3, 5, 6],
+            "C": [2, 3, 5, 6],
+            "D": [1, 2, 3, 4],
+
+            "blocks": [
+                "ShipWelder/SELtdLargeNanobotBuildAndRepairSystem",
+                "ShipWelder/SELtdSmallNanobotBuildAndRepairSystem"
+            ],
+            "exceptions": []
+        },
+
+        {
+            "name": "Assemblers/Refineries",
             "tag": "Productivity",
             "dangerous": false,
 
@@ -175,18 +207,18 @@
         },
 
         {
-            "name": "BARs",
+            "name": "H2/O2 Generation",
             "tag": "Productivity",
             "dangerous": false,
 
-            "A": [2, 4, 6, 8],
-            "B": [2, 3, 5, 6],
-            "C": [2, 3, 5, 6],
-            "D": [1, 2, 3, 4],
+            "A": [15, 20, 30, 40],
+            "B": [15, 18, 25, 30],
+            "C": [15, 18, 25, 30],
+            "D": null,
 
             "blocks": [
-                "ShipWelder/SELtdLargeNanobotBuildAndRepairSystem",
-                "ShipWelder/SELtdSmallNanobotBuildAndRepairSystem"
+                "OxygenGenerator",
+                "OxygenFarm"
             ],
             "exceptions": []
         },
