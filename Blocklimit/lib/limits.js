@@ -45,7 +45,7 @@ class Player {
         this.Punishment = Obj.dangerous ? 'DeleteBlock' : 'ShutOffBlock'
         this.IgnoreNpcs = 'true'
         this.RestrictProjection = Obj.dangerous
-        this.LimitFilterType = 'GridBlockCount'
+        this.LimitFilterType = 'None'
         this.GridTypeBlock = 'AllGrids'
         this.FilterValue = '0'
         this.Limit = Obj.player
@@ -65,10 +65,30 @@ class Faction {
         this.Punishment = Obj.dangerous ? 'DeleteBlock' : 'ShutOffBlock'
         this.IgnoreNpcs = 'true'
         this.RestrictProjection = Obj.dangerous
-        this.LimitFilterType = 'GridBlockCount'
+        this.LimitFilterType = 'None'
         this.GridTypeBlock = 'AllGrids'
         this.FilterValue = '0'
         this.Limit = Obj.faction
+        this.LimitFilterOperator = 'LessThan'
+    }
+}
+
+
+class Blacklist {
+    constructor(Blocks) {
+        this.Name = `Blacklisted`
+        this.BlockList = { string: Blocks }
+        this.Exceptions = { string: [] }
+        this.LimitFaction = 'true'
+        this.LimitGrids = 'true'
+        this.LimitPlayers = 'true'
+        this.Punishment = 'DeleteBlock'
+        this.IgnoreNpcs = 'false'
+        this.RestrictProjection = 'true'
+        this.LimitFilterType = 'None'
+        this.GridTypeBlock = 'AllGrids'
+        this.FilterValue = '0'
+        this.Limit = '0'
         this.LimitFilterOperator = 'LessThan'
     }
 }
@@ -78,5 +98,6 @@ class Faction {
 module.exports = {
     ShipClass,
     Player,
-    Faction
+    Faction,
+    Blacklist
 }

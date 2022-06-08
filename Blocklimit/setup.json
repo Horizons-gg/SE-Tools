@@ -1,20 +1,31 @@
 {
-
-    "GeneralLimits": [
-
+    ".old": [
         {
-            "name": "Blacklisted",
+            "name": "Mega Drills",
+            "tag": "Operations",
             "dangerous": true,
 
             "player": 0,
             "faction": 0,
 
             "blocks": [
-                "ConveyorSorter/ARYXTacticalModule",
-                "ConveyorSorter/ARYXKingswordSupercannon"
+                "Drill/Large_Drill_Tier",
+                "Drill/ModCubeBlockLargeMegaDrill"
             ],
             "exceptions": []
-        },
+        }
+    ],
+
+
+
+    "Blacklisted": [
+        "ConveyorSorter/ARYXTacticalModule",
+        "ConveyorSorter/ARYXKingswordSupercannon",
+        "Drill/Large_Drill_Tier",
+        "Drill/ModCubeBlockLargeMegaDrill"
+    ],
+
+    "GeneralLimits": [
         
         {
             "name": "Programmable Blocks",
@@ -135,21 +146,6 @@
                 "Drill/SELtdLargeNanobotDrillSystem",
                 "Drill/SELtdSmallNanobotDrillSystem"
             ]
-        },
-
-        {
-            "name": "Mega Drills",
-            "tag": "Operations",
-            "dangerous": true,
-
-            "player": 0,
-            "faction": 0,
-
-            "blocks": [
-                "Drill/Large_Drill_Tier",
-                "Drill/ModCubeBlockLargeMegaDrill"
-            ],
-            "exceptions": []
         },
 
         {

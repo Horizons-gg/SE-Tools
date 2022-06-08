@@ -83,6 +83,10 @@ Setup.GeneralLimits.forEach(Obj => {
 })
 
 
+//? Blacklist
+Config.BlockLimiterConfig.LimitItems[0].LimitItem.push(new Limit.Blacklist(Setup.Blacklisted))
+
+
 
 
 
