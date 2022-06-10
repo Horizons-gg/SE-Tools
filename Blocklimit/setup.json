@@ -1,22 +1,4 @@
 {
-    ".old": [
-        {
-            "name": "Mega Drills",
-            "tag": "Operations",
-            "dangerous": true,
-
-            "player": 0,
-            "faction": 0,
-
-            "blocks": [
-                "Drill/Large_Drill_Tier",
-                "Drill/ModCubeBlockLargeMegaDrill"
-            ],
-            "exceptions": []
-        }
-    ],
-
-
 
     "Blacklisted": [
         "ConveyorSorter/ARYXTacticalModule",
@@ -143,9 +125,24 @@
                 "Drill"
             ],
             "exceptions": [
-                "Drill/SELtdLargeNanobotDrillSystem",
-                "Drill/SELtdSmallNanobotDrillSystem"
+                "Drill/LittleBastard",
+                "Drill/FatBastard"
             ]
+        },
+
+        {
+            "name": "Mega Drills",
+            "tag": "Operations",
+            "dangerous": false,
+
+            "player": 4,
+            "faction": 8,
+
+            "blocks": [
+                "Drill/LittleBastard",
+                "Drill/FatBastard"
+            ],
+            "exceptions": []
         },
 
         {
