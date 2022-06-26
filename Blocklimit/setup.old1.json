@@ -2,7 +2,9 @@
 
     "Blacklisted": [
         "ConveyorSorter/ARYXTacticalModule",
-        "ConveyorSorter/ARYXKingswordSupercannon"
+        "ConveyorSorter/ARYXKingswordSupercannon",
+        "Drill/Large_Drill_Tier",
+        "Drill/ModCubeBlockLargeMegaDrill"
     ],
 
     "GeneralLimits": [
@@ -14,7 +16,6 @@
 
             "player": 16,
             "faction": 16,
-            "grid": 6,
 
             "blocks": [
                 "MyProgrammableBlock"
@@ -27,9 +28,8 @@
             "tag": "Blocks",
             "dangerous": true,
 
-            "player": 6,
+            "player": 4,
             "faction": 16,
-            "grid": 4,
 
             "blocks": [
                 "ShipWelder/SELtdLargeNanobotBuildAndRepairSystem",
@@ -45,7 +45,6 @@
 
             "player": 60,
             "faction": 60,
-            "grid": 20,
 
             "blocks": [
                 "Assembler",
@@ -61,7 +60,6 @@
 
             "player": 60,
             "faction": 60,
-            "grid": 20,
 
             "blocks": [
                 "OxygenGenerator",
@@ -75,9 +73,8 @@
             "tag": "Productivity",
             "dangerous": false,
 
-            "player": 200,
+            "player": 400,
             "faction": 400,
-            "grid": 100,
 
             "blocks": [
                 "OxygenTank"
@@ -92,7 +89,6 @@
 
             "player": 40,
             "faction": 40,
-            "grid": 16,
 
             "blocks": [
                 "ShipWelder"
@@ -110,7 +106,6 @@
 
             "player": 40,
             "faction": 40,
-            "grid": 16,
 
             "blocks": [
                 "ShipGrinder"
@@ -125,7 +120,6 @@
 
             "player": 60,
             "faction": 60,
-            "grid": 16,
 
             "blocks": [
                 "Drill"
@@ -143,7 +137,6 @@
 
             "player": 4,
             "faction": 8,
-            "grid": 2,
 
             "blocks": [
                 "Drill/LittleBastard",
@@ -159,12 +152,153 @@
 
             "player": 50,
             "faction": 50,
-            "grid": 16,
 
             "blocks": [
                 "MotorAdvancedRotor",
                 "MotorRotor",
                 "PistonBase"
+            ],
+            "exceptions": []
+        }
+
+    ],
+
+    "ClassLimits": [
+
+        {
+            "name": "BARs",
+            "tag": "Productivity",
+            "dangerous": false,
+
+            "A": [2, 4, 6, 8, 0],
+            "B": [2, 3, 5, 6, 0],
+            "C": [2, 3, 5, 6, 0],
+            "D": [1, 2, 3, 4],
+
+            "blocks": [
+                "ShipWelder/SELtdLargeNanobotBuildAndRepairSystem",
+                "ShipWelder/SELtdSmallNanobotBuildAndRepairSystem"
+            ],
+            "exceptions": []
+        },
+
+        {
+            "name": "Assemblers/Refineries",
+            "tag": "Productivity",
+            "dangerous": false,
+
+            "A": [15, 20, 30, 40, 0],
+            "B": [15, 18, 25, 30, 0],
+            "C": [15, 18, 25, 30, 0],
+            "D": null,
+
+            "blocks": [
+                "Assembler",
+                "Refinery"
+            ],
+            "exceptions": []
+        },
+
+        {
+            "name": "O2/H2 Generation",
+            "tag": "Productivity",
+            "dangerous": false,
+
+            "A": [15, 20, 30, 40, 0],
+            "B": [15, 18, 25, 30, 0],
+            "C": [15, 18, 25, 30, 0],
+            "D": [4, 6, 8, 10],
+
+            "blocks": [
+                "OxygenGenerator",
+                "OxygenFarm"
+            ],
+            "exceptions": []
+        },
+
+        {
+            "name": "O2/H2 Tanks",
+            "tag": "Productivity",
+            "dangerous": false,
+
+            "A": [10, 20, 40, 80, 0],
+            "B": [8, 16, 32, 64, 0],
+            "C": [8, 16, 32, 64, 0],
+            "D": [6, 10, 20, 40],
+
+            "blocks": [
+                "OxygenTank"
+            ],
+            "exceptions": []
+        },
+
+        {
+            "name": "Welders",
+            "tag": "Operations",
+            "dangerous": false,
+
+            "A": [4, 6, 12, 20, 0],
+            "B": [3, 5, 10, 15, 0],
+            "C": [3, 5, 10, 15, 0],
+            "D": [2, 4, 8, 10],
+
+            "blocks": [
+                "ShipWelder"
+            ],
+            "exceptions": [
+                "ShipWelder/SELtdLargeNanobotBuildAndRepairSystem",
+                "ShipWelder/SELtdSmallNanobotBuildAndRepairSystem"
+            ]
+        },
+
+        {
+            "name": "Grinders",
+            "tag": "Operations",
+            "dangerous": false,
+
+            "A": [4, 6, 12, 20, 0],
+            "B": [3, 5, 10, 15, 0],
+            "C": [3, 5, 10, 15, 0],
+            "D": [2, 4, 8, 10],
+
+            "blocks": [
+                "ShipGrinder"
+            ],
+            "exceptions": []
+        },
+
+        {
+            "name": "Drills",
+            "tag": "Operations",
+            "dangerous": false,
+
+            "A": [16, 16, 16, 30, 0],
+            "B": [16, 16, 16, 30, 0],
+            "C": [16, 16, 16, 30, 0],
+            "D": [16, 16, 16, 16],
+
+            "blocks": [
+                "Drill"
+            ],
+            "exceptions": [
+                "Drill/SELtdLargeNanobotDrillSystem",
+                "Drill/SELtdSmallNanobotDrillSystem"
+            ]
+        },
+
+        {
+            "name": "Mega Drills",
+            "tag": "Operations",
+            "dangerous": false,
+
+            "A": [1, 2, 3, 4, 0],
+            "B": [1, 2, 2, 2, 0],
+            "C": [1, 2, 2, 2, 0],
+            "D": null,
+
+            "blocks": [
+                "Drill/LittleBastard",
+                "Drill/FatBastard"
             ],
             "exceptions": []
         },
@@ -174,9 +308,10 @@
             "tag": "Power Production",
             "dangerous": false,
 
-            "player": null,
-            "faction": null,
-            "grid": 30,
+            "A": [6, 12, 24, 42, 0],
+            "B": [6, 10, 18, 26, 0],
+            "C": [6, 10, 18, 26, 0],
+            "D": [10, 16, 20, 30],
 
             "blocks": [
                 "Reactor"
@@ -189,9 +324,10 @@
             "tag": "Power Production",
             "dangerous": false,
 
-            "player": null,
-            "faction": null,
-            "grid": 80,
+            "A": [40, 60, 80, 150, 0],
+            "B": [40, 50, 70, 100, 0],
+            "C": [40, 50, 70, 100, 0],
+            "D": [10, 20, 30, 40],
 
             "blocks": [
                 "BatteryBlock"
@@ -204,9 +340,10 @@
             "tag": "Power Production",
             "dangerous": false,
 
-            "player": null,
-            "faction": null,
-            "grid": 80,
+            "A": [20, 40, 60, 100, 0],
+            "B": [20, 30, 60, 80, 0],
+            "C": [20, 30, 60, 80, 0],
+            "D": [4, 8, 16, 32],
 
             "blocks": [
                 "SolarPanel"
@@ -219,9 +356,10 @@
             "tag": "Power Production",
             "dangerous": false,
 
-            "player": null,
-            "faction": null,
-            "grid": 80,
+            "A": [5, 15, 30, 50, 0],
+            "B": [5, 10, 20, 40, 0],
+            "C": [5, 10, 20, 40, 0],
+            "D": [2, 4, 8, 16],
 
             "blocks": [
                 "HydrogenEngine"
@@ -234,28 +372,59 @@
             "tag": "Creativity",
             "dangerous": false,
 
-            "player": null,
-            "faction": null,
-            "grid": 16,
+            "A": [10, 15, 25, 40, 0],
+            "B": [8, 15, 20, 30, 0],
+            "C": [8, 15, 20, 30, 0],
+            "D": [6, 12, 16, 24],
 
             "blocks": [
                 "CameraBlock"
             ],
             "exceptions": []
-        }
+        },
 
-    ],
+        {
+            "name": "Programmable Blocks",
+            "tag": "Creativity",
+            "dangerous": true,
 
-    "ClassLimits": [
+            "A": [2, 4, 8, 12, 0],
+            "B": [2, 4, 6, 8, 0],
+            "C": [2, 4, 6, 8, 0],
+            "D": [1, 2, 4, 6],
+
+            "blocks": [
+                "MyProgrammableBlock"
+            ],
+            "exceptions": []
+        },
+
+        {
+            "name": "Pistons/Rotors/Hinges",
+            "tag": "Creativity",
+            "dangerous": true,
+
+            "A": [4, 8, 16, 24, 0],
+            "B": [4, 8, 12, 16, 0],
+            "C": [4, 8, 12, 16, 0],
+            "D": [4, 8, 12, 16],
+
+            "blocks": [
+                "MotorAdvancedRotor",
+                "MotorRotor",
+                "PistonBase"
+            ],
+            "exceptions": []
+        },
 
         {
             "name": "Weapons",
             "tag": "Combat",
             "dangerous": false,
 
-            "A": [40, 90, 150, 200, 250],
-            "B": [30, 80, 100, 150, 200],
-            "C": [30, 80, 100, 150, 200],
+            "A": [40, 90, 150, 250, 0],
+            "B": [30, 80, 100, 200, 0],
+            "C": [30, 80, 100, 200, 0],
             "D": [15, 25, 40, 60],
 
             "blocks": [
@@ -282,7 +451,7 @@
                 "LargeMissileTurret/ARYXSentinel",
                 "LargeMissileTurret/ARYXReaperPulseCannon",
                 "ConveyorSorter/ARYXMace",
-                "ConveyorSorter/ARYXFocusLance",
+                "ConveyorSorter/AWE_WL_SuperLaser_Large_CB",
                 "LargeMissileTurret/ARYX_FW_NovaBlaster",
                 "ConveyorSorter/AWE_MarkV_SuperLaser_Large_CB",
                 "ConveyorSorter/ARYXLargeRadar",
@@ -321,20 +490,19 @@
                 "SmallMissileLauncher/ARYX_Fixed_Chord_auto",
                 "ConveyorSorter/ARYXSmallFlechetteLauncher",
                 "LargeMissileTurret/ARYXFlakTurret",
-                "ConveyorSorter/ARYX_Small_Sidekick_Hangar",
-				"LargeMissileTurret/ARYXPulsarCannon"
+                "ConveyorSorter/ARYX_Small_Sidekick_Hangar"
             ],
             "exceptions": []
         },
 
         {
-            "name": "Sunderer Heavy Lance",
+            "name": "Atlas Superlaser",
             "tag": "Combat",
             "dangerous": false,
 
-            "A": [1, 1, 2, 3, 3],
-            "B": [1, 1, 2, 2, 2],
-            "C": [1, 1, 2, 2, 2],
+            "A": [0, 1, 2, 3, 0],
+            "B": [0, 1, 2, 2, 0],
+            "C": [0, 1, 2, 2, 0],
             "D": null,
 
             "blocks": [
@@ -344,33 +512,17 @@
         },
 
         {
-            "name": "Hyperion Heavy Torpedo Launcher",
+            "name": "Mark-I Atlas Superlaser",
             "tag": "Combat",
             "dangerous": false,
 
-            "A": [1, 2, 4, 5, 6],
-            "B": [1, 2, 3, 4, 6],
-            "C": [1, 2, 3, 4, 6],
+            "A": [1, 2, 4, 6, 0],
+            "B": [1, 2, 3, 4, 0],
+            "C": [1, 2, 3, 4, 0],
             "D": null,
 
             "blocks": [
-                "LargeMissileTurret/ARYXHeavyTorpedoLauncher"
-            ],
-            "exceptions": []
-        },
-		
-		{
-            "name": "Predator-850 Coilgun",
-            "tag": "Combat",
-            "dangerous": false,
-
-            "A": [1, 2, 4, 5, 5],
-            "B": [1, 2, 4, 5, 5],
-            "C": [1, 2, 3, 4, 4],
-            "D": null,
-
-            "blocks": [
-                "ConveyorSorter/ARYXHeavyCoilgun"
+                "ConveyorSorter/AWE_MarkV_SuperLaser_Large_CB"
             ],
             "exceptions": []
         },
@@ -380,9 +532,9 @@
             "tag": "Combat",
             "dangerous": false,
 
-            "A": [1, 2, 3, 4, 6],
-            "B": [1, 2, 3, 4, 6],
-            "C": [2, 3, 4, 5, 5],
+            "A": [2, 4, 6, 8, 0],
+            "B": [2, 3, 4, 6, 0],
+            "C": [2, 3, 4, 5, 0],
             "D": null,
 
             "blocks": [
@@ -396,9 +548,9 @@
             "tag": "Combat",
             "dangerous": false,
 
-            "A": [2, 4, 6, 6, 8],
-            "B": [2, 2, 3, 4, 6],
-            "C": [2, 2, 3, 4, 6],
+            "A": [2, 4, 6, 8, 0],
+            "B": [2, 3, 4, 6, 0],
+            "C": [2, 3, 4, 5, 0],
             "D": null,
 
             "blocks": [
@@ -408,29 +560,13 @@
         },
 
         {
-            "name": "Prometheus Focus Beam Lance",
-            "tag": "Combat",
-            "dangerous": false,
-
-            "A": [2, 4, 6, 6, 8],
-            "B": [2, 2, 3, 4, 6],
-            "C": [2, 2, 3, 4, 6],
-            "D": null,
-
-            "blocks": [
-                "ConveyorSorter/ARYXFocusLance"
-            ],
-            "exceptions": []
-        },
-
-        {
             "name": "Ares Gauss Cannon",
             "tag": "Combat",
             "dangerous": false,
 
-            "A": [2, 4, 6, 7, 8],
-            "B": [2, 3, 4, 5, 6],
-            "C": [2, 3, 3, 4, 5],
+            "A": [2, 4, 6, 8, 0],
+            "B": [2, 3, 4, 6, 0],
+            "C": [2, 3, 4, 5, 0],
             "D": null,
 
             "blocks": [
@@ -444,9 +580,9 @@
             "tag": "Combat",
             "dangerous": false,
 
-            "A": [2, 4, 5, 6, 8],
-            "B": [2, 2, 3, 4, 6],
-            "C": [2, 2, 3, 4, 5],
+            "A": [2, 4, 6, 8, 0],
+            "B": [2, 3, 4, 6, 0],
+            "C": [2, 3, 4, 5, 0],
             "D": null,
 
             "blocks": [
@@ -460,9 +596,9 @@
             "tag": "Combat",
             "dangerous": false,
 
-            "A": [2, 4, 6, 9, 12],
-            "B": [2, 4, 6, 8, 10],
-            "C": [2, 4, 6, 8, 10],
+            "A": [4, 6, 9, 12, 0],
+            "B": [4, 6, 8, 10, 0],
+            "C": [4, 6, 8, 10, 0],
             "D": null,
 
             "blocks": [
@@ -476,9 +612,9 @@
             "tag": "Combat",
             "dangerous": false,
 
-            "A": [2, 4, 6, 9, 12],
-            "B": [2, 4, 6, 8, 10],
-            "C": [2, 4, 6, 8, 10],
+            "A": [4, 6, 9, 12, 0],
+            "B": [4, 6, 8, 10, 0],
+            "C": [4, 6, 8, 10, 0],
             "D": null,
 
             "blocks": [
@@ -492,9 +628,9 @@
             "tag": "Combat",
             "dangerous": false,
 
-            "A": [2, 4, 6, 9, 12],
-            "B": [2, 4, 6, 8, 10],
-            "C": [2, 4, 6, 8, 10],
+            "A": [4, 6, 9, 12, 0],
+            "B": [4, 6, 8, 10, 0],
+            "C": [4, 6, 8, 10, 0],
             "D": null,
 
             "blocks": [
@@ -508,9 +644,9 @@
             "tag": "Combat",
             "dangerous": false,
 
-            "A": [6, 10, 12, 14, 16],
-            "B": [6, 8, 10 ,12, 14],
-            "C": [6, 8, 10 ,12, 14],
+            "A": [6, 10, 14, 16, 0],
+            "B": [6, 8, 12, 14, 0],
+            "C": [6, 8, 12, 14, 0],
             "D": null,
 
             "blocks": [

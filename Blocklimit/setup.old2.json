@@ -2,7 +2,9 @@
 
     "Blacklisted": [
         "ConveyorSorter/ARYXTacticalModule",
-        "ConveyorSorter/ARYXKingswordSupercannon"
+        "ConveyorSorter/ARYXKingswordSupercannon",
+        "Drill/Large_Drill_Tier",
+        "Drill/ModCubeBlockLargeMegaDrill"
     ],
 
     "GeneralLimits": [
@@ -14,7 +16,6 @@
 
             "player": 16,
             "faction": 16,
-            "grid": 6,
 
             "blocks": [
                 "MyProgrammableBlock"
@@ -27,9 +28,8 @@
             "tag": "Blocks",
             "dangerous": true,
 
-            "player": 6,
+            "player": 4,
             "faction": 16,
-            "grid": 4,
 
             "blocks": [
                 "ShipWelder/SELtdLargeNanobotBuildAndRepairSystem",
@@ -45,7 +45,6 @@
 
             "player": 60,
             "faction": 60,
-            "grid": 20,
 
             "blocks": [
                 "Assembler",
@@ -61,7 +60,6 @@
 
             "player": 60,
             "faction": 60,
-            "grid": 20,
 
             "blocks": [
                 "OxygenGenerator",
@@ -75,9 +73,8 @@
             "tag": "Productivity",
             "dangerous": false,
 
-            "player": 200,
+            "player": 400,
             "faction": 400,
-            "grid": 100,
 
             "blocks": [
                 "OxygenTank"
@@ -92,7 +89,6 @@
 
             "player": 40,
             "faction": 40,
-            "grid": 16,
 
             "blocks": [
                 "ShipWelder"
@@ -110,7 +106,6 @@
 
             "player": 40,
             "faction": 40,
-            "grid": 16,
 
             "blocks": [
                 "ShipGrinder"
@@ -125,7 +120,6 @@
 
             "player": 60,
             "faction": 60,
-            "grid": 16,
 
             "blocks": [
                 "Drill"
@@ -143,7 +137,6 @@
 
             "player": 4,
             "faction": 8,
-            "grid": 2,
 
             "blocks": [
                 "Drill/LittleBastard",
@@ -159,12 +152,153 @@
 
             "player": 50,
             "faction": 50,
-            "grid": 16,
 
             "blocks": [
                 "MotorAdvancedRotor",
                 "MotorRotor",
                 "PistonBase"
+            ],
+            "exceptions": []
+        }
+
+    ],
+
+    "ClassLimits": [
+
+        {
+            "name": "BARs",
+            "tag": "Productivity",
+            "dangerous": false,
+
+            "A": [2, 4, 5, 6, 8],
+            "B": [2, 3, 4, 5, 6],
+            "C": [2, 3, 4, 5, 6],
+            "D": [1, 2, 3, 4],
+
+            "blocks": [
+                "ShipWelder/SELtdLargeNanobotBuildAndRepairSystem",
+                "ShipWelder/SELtdSmallNanobotBuildAndRepairSystem"
+            ],
+            "exceptions": []
+        },
+
+        {
+            "name": "Assemblers/Refineries",
+            "tag": "Productivity",
+            "dangerous": false,
+
+            "A": [15, 20, 25, 30, 40],
+            "B": [15, 18, 22, 26, 30],
+            "C": [15, 18, 22, 26, 30],
+            "D": null,
+
+            "blocks": [
+                "Assembler",
+                "Refinery"
+            ],
+            "exceptions": []
+        },
+
+        {
+            "name": "O2/H2 Generation",
+            "tag": "Productivity",
+            "dangerous": false,
+
+            "A": [15, 20, 25, 30, 40],
+            "B": [15, 18, 22, 26, 30],
+            "C": [15, 18, 22, 26, 30],
+            "D": [4, 6, 8, 10],
+
+            "blocks": [
+                "OxygenGenerator",
+                "OxygenFarm"
+            ],
+            "exceptions": []
+        },
+
+        {
+            "name": "O2/H2 Tanks",
+            "tag": "Productivity",
+            "dangerous": false,
+
+            "A": [10, 20, 40, 60, 80],
+            "B": [8, 16, 32, 48, 64],
+            "C": [8, 16, 32, 48, 64],
+            "D": [6, 10, 20, 40],
+
+            "blocks": [
+                "OxygenTank"
+            ],
+            "exceptions": []
+        },
+
+        {
+            "name": "Welders",
+            "tag": "Operations",
+            "dangerous": false,
+
+            "A": [4, 6, 10, 12, 20],
+            "B": [3, 5, 8, 12, 16],
+            "C": [3, 5, 8, 12, 16],
+            "D": [4, 6, 8, 10],
+
+            "blocks": [
+                "ShipWelder"
+            ],
+            "exceptions": [
+                "ShipWelder/SELtdLargeNanobotBuildAndRepairSystem",
+                "ShipWelder/SELtdSmallNanobotBuildAndRepairSystem"
+            ]
+        },
+
+        {
+            "name": "Grinders",
+            "tag": "Operations",
+            "dangerous": false,
+
+            "A": [4, 6, 10, 12, 20],
+            "B": [3, 5, 8, 12, 16],
+            "C": [3, 5, 8, 12, 16],
+            "D": [4, 6, 8, 10],
+
+            "blocks": [
+                "ShipGrinder"
+            ],
+            "exceptions": []
+        },
+
+        {
+            "name": "Drills",
+            "tag": "Operations",
+            "dangerous": false,
+
+            "A": [16, 16, 16, 20, 30],
+            "B": [16, 16, 16, 20, 30],
+            "C": [16, 16, 16, 20, 30],
+            "D": [16, 16, 16, 16],
+
+            "blocks": [
+                "Drill"
+            ],
+            "exceptions": [
+                "Drill/SELtdLargeNanobotDrillSystem",
+                "Drill/SELtdSmallNanobotDrillSystem"
+            ]
+        },
+
+        {
+            "name": "Mega Drills",
+            "tag": "Operations",
+            "dangerous": false,
+
+            "A": [1, 2, 3, 3, 4],
+            "B": [1, 2, 2, 2, 2],
+            "C": [1, 2, 2, 2, 2],
+            "D": null,
+
+            "blocks": [
+                "Drill/LittleBastard",
+                "Drill/FatBastard"
             ],
             "exceptions": []
         },
@@ -174,9 +308,10 @@
             "tag": "Power Production",
             "dangerous": false,
 
-            "player": null,
-            "faction": null,
-            "grid": 30,
+            "A": [6, 12, 20, 30, 42],
+            "B": [6, 10, 16, 20, 26],
+            "C": [6, 10, 16, 20, 26],
+            "D": [10, 16, 20, 30],
 
             "blocks": [
                 "Reactor"
@@ -189,9 +324,10 @@
             "tag": "Power Production",
             "dangerous": false,
 
-            "player": null,
-            "faction": null,
-            "grid": 80,
+            "A": [40, 60, 80, 110, 150],
+            "B": [40, 50, 60, 80, 100],
+            "C": [40, 50, 60, 80, 100],
+            "D": [10, 20, 30, 40],
 
             "blocks": [
                 "BatteryBlock"
@@ -204,9 +340,10 @@
             "tag": "Power Production",
             "dangerous": false,
 
-            "player": null,
-            "faction": null,
-            "grid": 80,
+            "A": [20, 40, 60, 80, 100],
+            "B": [20, 30, 45, 65, 80],
+            "C": [20, 30, 45, 65, 80],
+            "D": [4, 8, 16, 32],
 
             "blocks": [
                 "SolarPanel"
@@ -219,9 +356,10 @@
             "tag": "Power Production",
             "dangerous": false,
 
-            "player": null,
-            "faction": null,
-            "grid": 80,
+            "A": [5, 15, 25, 35, 50],
+            "B": [5, 10, 20, 30, 40],
+            "C": [5, 10, 20, 30, 40],
+            "D": [2, 4, 8, 16],
 
             "blocks": [
                 "HydrogenEngine"
@@ -234,19 +372,50 @@
             "tag": "Creativity",
             "dangerous": false,
 
-            "player": null,
-            "faction": null,
-            "grid": 16,
+            "A": [10, 15, 22, 30, 40],
+            "B": [8, 15, 20, 25, 30],
+            "C": [8, 15, 20, 25, 30],
+            "D": [6, 12, 16, 24],
 
             "blocks": [
                 "CameraBlock"
             ],
             "exceptions": []
-        }
+        },
 
-    ],
+        {
+            "name": "Programmable Blocks",
+            "tag": "Creativity",
+            "dangerous": true,
 
-    "ClassLimits": [
+            "A": [2, 4, 6, 8, 12],
+            "B": [2, 4, 5, 6, 8],
+            "C": [2, 4, 5, 6, 8],
+            "D": [1, 2, 4, 6],
+
+            "blocks": [
+                "MyProgrammableBlock"
+            ],
+            "exceptions": []
+        },
+
+        {
+            "name": "Pistons/Rotors/Hinges",
+            "tag": "Creativity",
+            "dangerous": true,
+
+            "A": [4, 8, 12, 16, 24],
+            "B": [4, 8, 10, 12, 16],
+            "C": [4, 8, 10, 12, 16],
+            "D": [4, 8, 12, 16],
+
+            "blocks": [
+                "MotorAdvancedRotor",
+                "MotorRotor",
+                "PistonBase"
+            ],
+            "exceptions": []
+        },
 
         {
             "name": "Weapons",

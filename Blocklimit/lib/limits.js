@@ -1,7 +1,7 @@
 const Classes = {
-    A: ['SupportedStationsOnly', 1000, 3000, 8000, 8000],
-    B: ['StationsOnly', 750, 2500, 7500, 7500],
-    C: ['LargeGridsOnly', 750, 2500, 7500, 7500],
+    A: ['SupportedStationsOnly', 1000, 3000, 5000, 8000, 8000],
+    B: ['StationsOnly', 750, 2500, 5000, 7500, 7500],
+    C: ['LargeGridsOnly', 750, 2500, 5000, 7500, 7500],
     D: ['SmallGridsOnly', 250, 500, 1000, 1000]
 }
 
@@ -10,7 +10,10 @@ const Classes = {
 class ShipClass {
 
     constructor(Obj, Class) {
-        let ClassType = Class.charAt(1) === '4' ? '>' : '<'
+        let ClassType
+        if (['A', 'B', 'C'].includes(Class.charAt(0))) {
+            ClassType = Class.charAt(1) === '5' ? '>' : '<'
+        } else ClassType = Class.charAt(1) === '4' ? '>' : '<'
 
         this.Name = `${Obj.name} | ${Class} Class [${ClassType}${Classes[Class.charAt(0)][Class.charAt(1)]} Blocks]`
         this.BlockList = { string: Obj.blocks.map(block => block) }
@@ -74,6 +77,26 @@ class Faction {
 }
 
 
+class Grid {
+    constructor(Obj) {
+        this.Name = `${Obj.name} [Grid Limit]`
+        this.BlockList = { string: Obj.blocks.map(block => block) }
+        this.Exceptions = { string: Obj.exceptions.map(exception => exception) }
+        this.LimitFaction = 'false'
+        this.LimitGrids = 'true'
+        this.LimitPlayers = 'false'
+        this.Punishment = Obj.dangerous ? 'DeleteBlock' : 'ShutOffBlock'
+        this.IgnoreNpcs = 'true'
+        this.RestrictProjection = Obj.dangerous
+        this.LimitFilterType = 'None'
+        this.GridTypeBlock = 'AllGrids'
+        this.FilterValue = '0'
+        this.Limit = Obj.grid
+        this.LimitFilterOperator = 'LessThan'
+    }
+}
+
+
 class Blacklist {
     constructor(Blocks) {
         this.Name = `Blacklisted`
@@ -99,5 +122,6 @@ module.exports = {
     ShipClass,
     Player,
     Faction,
+    Grid,
     Blacklist
 }
