@@ -62,9 +62,9 @@ class Faction {
         this.Name = `${Obj.name} [Faction Limit]`
         this.BlockList = { string: Obj.blocks.map(block => block) }
         this.Exceptions = { string: Obj.exceptions.map(exception => exception) }
-        this.LimitFaction = 'false'
+        this.LimitFaction = 'true'
         this.LimitGrids = 'false'
-        this.LimitPlayers = 'true'
+        this.LimitPlayers = 'false'
         this.Punishment = Obj.dangerous ? 'DeleteBlock' : 'ShutOffBlock'
         this.IgnoreNpcs = 'true'
         this.RestrictProjection = Obj.dangerous
